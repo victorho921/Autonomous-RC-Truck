@@ -1,0 +1,72 @@
+<Window
+    x:Class="Gui_Training.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Title="Gui Training">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <!-- Input Row -->
+            <RowDefinition Height="Auto"/>
+            <!-- Add, Save, Load Buttons -->
+            <RowDefinition Height="Auto"/>
+            <!-- Send and Receive Buttons -->
+            <RowDefinition Height="*"/>
+            <!-- Points List -->
+            <RowDefinition Height="Auto"/>
+            <!-- Status Box -->
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="3*"/>
+            <!-- Form & List -->
+            <ColumnDefinition Width="2*"/>
+            <!-- Canvas -->
+        </Grid.ColumnDefinitions>
+
+        <!-- Input fields for point data -->
+        <StackPanel Orientation="Horizontal" Margin="10" Grid.Row="0" Grid.Column="0">
+            <TextBox x:Name="XCoordinateTextBox" Width="120" Height="30" 
+                     PlaceholderText="X Coordinate" Margin="0,0,10,0"/>
+            <TextBox x:Name="YCoordinateTextBox" Width="120" Height="30" 
+                     PlaceholderText="Y Coordinate" Margin="0,0,10,0"/>
+            <TextBox x:Name="SpeedTextBox" Width="120" Height="30" 
+                     PlaceholderText="Speed" Margin="0,0,10,0"/>
+        </StackPanel>
+
+        <!-- Add, Save, Load Buttons -->
+        <StackPanel Orientation="Horizontal" Margin="10" Grid.Row="1" Grid.Column="0">
+            <Button Content="Create Point" Width="120" Height="30" Margin="0,0,10,0" 
+            Click="OnCreatePointClick"/>
+            <Button Content="Save Path" Width="120" Height="30" Margin="0,0,10,0" 
+            Click="OnSavePointListClick"/>
+            <Button Content="Load Path from File" Width="160" Height="30" 
+            Click="OnLoadPointsFromFileClick"/>
+        </StackPanel>
+
+        <!-- Send and Receive Buttons -->
+        <StackPanel Orientation="Horizontal" Margin="10" Grid.Row="2" Grid.Column="0">
+            <Button Content="Connect and Send" Width="150" Height="30" 
+            Click="OnConnectAndSendClick"/>
+            <Button Content="Receive Points from Truck" Width="180" Height="30"
+                    Click="OnConnectAndReceive"/>
+        </StackPanel>
+
+        <!-- Display points -->
+        <ListBox x:Name="PointsListBox" Margin="10" Grid.Row="3" Grid.Column="0" 
+                 VerticalAlignment="Stretch" HorizontalAlignment="Stretch"/>
+
+        <!-- Status Box -->
+        <ListBox x:Name="StatusBox" Margin="10" Grid.Row="4" Grid.Column="0"
+                 VerticalAlignment="Bottom" Height="100"/>
+
+        <!-- Canvas for displaying the points as a grid -->
+        <Canvas x:Name="MapCanvas" Grid.RowSpan="5" Grid.Column="1" Background="LightGray" 
+                VerticalAlignment="Stretch" HorizontalAlignment="Stretch">
+        </Canvas>
+    </Grid>
+</Window>

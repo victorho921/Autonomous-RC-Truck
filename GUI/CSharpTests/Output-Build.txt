@@ -1,0 +1,8 @@
+﻿Build started at 6:52 PM...
+1>------ Build started: Project: ConsoleApp1, Configuration: Debug Any CPU ------
+1>Skipping analyzers to speed up the build. You can execute 'Build' or 'Rebuild' command to run analyzers.
+1>C:\Users\eylon\Desktop\MECH 524b\RC car\Autonomous_RC_Car\gui\ConsoleApp1\CRectangle.cs(36,65,36,66): error CS1002: ; expected
+1>C:\Users\eylon\Desktop\MECH 524b\RC car\Autonomous_RC_Car\gui\ConsoleApp1\CRectangle.cs(36,65,36,66): error CS1519: Invalid token ')' in class, record, struct, or interface member declaration
+1>Done building project "ConsoleApp1.csproj" -- FAILED.
+========== Build: 0 succeeded, 1 failed, 0 up-to-date, 0 skipped ==========
+========== Build completed at 6:52 PM and took 00.694 seconds ==========

@@ -1,0 +1,140 @@
+##### Windows
+# Windows thumbnail cache files
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+
+# Dump file
+*.stackdump
+
+# Folder config file
+[Dd]esktop.ini
+
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+# Windows Installer files
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+
+# Windows shortcuts
+*.lnk
+
+##### MacOS
+# General
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Thumbnails
+._*
+
+# Files that might appear in the root of a volume
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+
+# Directories potentially created on remote AFP share
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+##### VisualStudioCode
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace
+
+# Local History for Visual Studio Code
+.history/
+
+##### CMake
+CMakeLists.txt.user
+CMakeCache.txt
+CMakeFiles
+CMakeScripts
+Testing
+Makefile
+cmake_install.cmake
+install_manifest.txt
+compile_commands.json
+CTestTestfile.cmake
+_deps
+
+##### C++
+# Prerequisites
+*.d
+
+# Compiled Object files
+*.slo
+*.lo
+*.o
+*.obj
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Compiled Dynamic libraries
+*.so
+*.dylib
+*.dll
+
+# Fortran module files
+*.mod
+*.smod
+
+# Compiled Static libraries
+*.lai
+*.la
+*.a
+*.lib
+
+# Executables
+*.exe
+*.out
+*.app
+
+# C/C++ binary extension file
+*.bin
+
+#### ESP-IDF 
+build/
+sdkconfig
+sdkconfig.old
+/.vs
+/GUI/CSharpTests/.vs/ConsoleApp1/DesignTimeBuild
+/GUI/CSharpTests/.vs/ConsoleApp1/FileContentIndex
+/GUI/CSharpTests/.vs/ConsoleApp1/v17
+/GUI/CSharpTests/bin/Debug/net8.0
+/GUI/CSharpTests/GUI1/GUI1
+/GUI/CSharpTests/obj/Debug/net8.0
+/GUI/CSharpTests/obj
+/GUI/obj
+/GUI/CSharpTests/GUI2/bin/x64/Debug/net8.0-windows10.0.19041.0/win-x64
+/GUI/CSharpTests/GUI2/.vs
+/GUI/CSharpTests/GUI2/Assets
+/GUI/CSharpTests/GUI2/obj
+/GUI/CSharpTests/GUI2/Properties
+/Comms/gui
+/GUI/GUI/.vs
+/GUI/GUI/bin/x64/Debug/net8.0-windows10.0.19041.0/win-x64
+/GUI/GUI/obj
+/GUI/GUI/Properties
+/GUI/GUI/App.xaml
+/GUI/GUI/App.xaml.cs
+/GUI/GUI/Gui Training.csproj
+/GUI/GUI/Gui Training.csproj.user
+/GUI/GUI/Package.appxmanifest
