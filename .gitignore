@@ -128,7 +128,6 @@ sdkconfig.old
 /GUI/CSharpTests/GUI2/Assets
 /GUI/CSharpTests/GUI2/obj
 /GUI/CSharpTests/GUI2/Properties
-/Comms/gui
 /GUI/GUI/.vs
 /GUI/GUI/bin/x64/Debug/net8.0-windows10.0.19041.0/win-x64
 /GUI/GUI/obj
